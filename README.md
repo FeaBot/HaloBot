@@ -1,4 +1,4 @@
-### Introduction to HaloBot
+### HaloBot
 HaloBot is an end to end embodied intelligent robot based on LiAuto HaloOS. It deeply integrates the advantageous technologies of HaloOS in communication, control, intelligent processing, and security protection, endowing it with a high level of intelligence.
 
 ### I. Introduction to HaloOS
