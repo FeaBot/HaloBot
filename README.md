@@ -2,9 +2,12 @@
 HaloBot is an end to end embodied intelligent robot based on LiAuto HaloOS. It deeply integrates the advantageous technologies of HaloOS in communication, control, intelligent processing, and security protection, endowing it with a high level of intelligence.
 
 ### How to use
-|Step 1: Download|[ource Code Download Process](docs/quick_start/01_downloading.md)|
-|Step 2: Compile|[Project Compilation Process](docs/quick_start/02_compiling.md)|
-|Step 3: Run|[Deployment and Running Process](docs/quick_start/03_running.md)|
+Step 1: Download([How to download the source code](docs/quick_start/01_downloading.md))
+
+Step 2: Compile([How to compile the source code](docs/quick_start/02_compiling.md))
+
+Step 3: Run([How to deploy and run](docs/quick_start/03_running.md))
+
 
 
 ### I. Introduction to HaloOS
