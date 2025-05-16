@@ -1,64 +1,68 @@
-# 工程编译
-## 1. 编译环境准备
-### 1.1 安装VCOS Studio配置工具依赖插件
-#### 1.1.1. Windows系统
-1. 以【管理员权限】打开PowerShell，在根目录`haloosspace`下
-2. 执行以下命令
+# Project Compilation
+
+## 1. Prepare the Compilation Environment
+
+### 1.1 Install Dependent Plugins for VCOS Studio Configuration Tool
+
+#### 1.1.1 Windows System
+1. Open PowerShell with **Administrator privileges** and navigate to the root directory `haloosspace`.
+2. Execute the following command:
     ```bash
     python ./vcos/vcos_studio/configurator/init_env.py -a
     ```
-#### 1.1.2. Linux系统
-1. 打开Linux终端，在根目录`haloosspace`下
-2. 执行以下命令
+
+#### 1.1.2 Linux System
+1. Open a Linux terminal and navigate to the root directory `haloosspace`.
+2. Execute the following commands:
     ```bash
     sudo apt update
     sudo apt install python3.8-venv libxcb-cursor0
     python ./vcos/vcos_studio/configurator/init_env.py -a
     ```
-    > 在高版本的Ubuntu下如果Python3.8-venv找不到，请运行`sudo add-apt-repository ppa:deadsnakes/ppa`以添加 deadsnakes PPA源（用于提供旧版本 Python），然后再次运行上述命令
-### 1.2. 安装编译工具链
-在`haloosspace`目录，执行以下命令安装编译工具链：
+    > If `python3.8-venv` is not found on newer Ubuntu versions, run `sudo add-apt-repository ppa:deadsnakes/ppa` to add the deadsnakes PPA (for older Python versions), then re-run the above commands.
+
+### 1.2 Install the Compilation Toolchain
+In the `haloosspace` directory, execute the following command to install the compilation toolchain:
 ```bash
 python ./vcos/build/compiling_env.py
 ```
-该命令依次执行以下安装步骤：
-- 安装CMake工具，并将安装路径添加到PATH环境变量
-- 安装kconfiglib工具
-- 安装make工具，并设置`MAKE_TOOL_PATH`环境变量
-- 安装ninja工具，并设置`NINJA_TOOL_PATH`环境变量
-- 安装tricore-gcc编译工具链，并将安装路径添加到PATH环境变量
-- 安装arm-gcc编译工具链，并将安装路径添加到PATH环境变量
-- 安装Docker工具
+This command performs the following installation steps in sequence:
+- Installs the CMake tool and adds its path to the PATH environment variable.
+- Installs the kconfiglib tool.
+- Installs the make tool and sets the `MAKE_TOOL_PATH` environment variable.
+- Installs the ninja tool and sets the `NINJA_TOOL_PATH` environment variable.
+- Installs the tricore-gcc compilation toolchain and adds its path to the PATH environment variable.
+- Installs the arm-gcc compilation toolchain and adds its path to the PATH environment variable.
+- Installs the Docker tool.
 
-## 2. 编译
-### 2.1. 一键编译
+## 2. Compilation
 
-> Windows系统需要以【管理员权限】打开PowerShell，并切换到`haloosspace`目录
+### 2.1 One-Click Compilation
 
-- 切换到`haloosspace/build`目录：
+> For Windows systems, open PowerShell with **Administrator privileges** and navigate to the `haloosspace` directory.
+
+- Navigate to the `haloosspace/build` directory:
   ```bash
   cd ./build
   ```
-- 编译rt_demo应用：配置使用E3650_DEV_KIT板级配置，使用gcc编译器，使用make作为make工具，支持在实际开发板硬件运行
+- Compile the `rt_demo` application: Configure to use the E3650_DEV_KIT board configuration, gcc compiler, make as the build tool, and support running on actual development board hardware.
   ```bash
   python haloos_build.py -app_name rt_demo
   ```
 
-  该命令会依次完成以下操作：
+  This command performs the following operations in sequence:
+  - Generates dynamic code based on the E3650_DEV_KIT board configuration for the `rt_demo` application.
+  - Automatically builds the project using CMake to invoke the make tool.
+  - Generates the final image file.
+  - The compilation output is saved by default in the `haloosspace/output/rt_demo_E3650_DEV_KIT_gcc` directory.
 
-  - 根据 rt_demo 应用的 E3650_DEV_KIT 板级配置生成动态代码
-  - 通过 CMake 调用 make 工具自动化构建
-  - 最终编译生成镜像文件
-  - 编译产物默认保存在 `haloosspace/output/rt_demo_E3650_DEV_KIT_gcc` 目录下
+  > To compile `vbslite_demo`, replace `-app_name rt_demo` with `-app_name vbslite_demo` in the above command.
 
-  > 如需编译 vbslite_demo，请将上述命令中的 -app_name rt_demo 替换为 -app_name vbslite_demo
+### 2.2 Compilation Instructions
+For detailed explanations of compilation commands, refer to [HaloOS Compilation Framework Documentation](https://gitee.com/haloos/build/blob/master/README.md).
 
-### 2.2. 编译说明
-详细的编译命令说明请参考[HaloOS编译框架说明](https://gitee.com/haloos/build/blob/master/README.md)
-
-如果修改代码或新增代码目录并修改CMakeLists.txt文件，需要删除对应的output目录，重新执行编译命令
-
+If you modify the code or add new code directories and update the `CMakeLists.txt` file, you need to delete the corresponding output directory and re-run the compilation command:
 ```bash
-rm -r ./output  # 删除output目录
-python haloos_build.py -app_name rt_demo  # 重新编译
+rm -r ./output  # Delete the output directory
+python haloos_build.py -app_name rt_demo  # Recompile
 ```
