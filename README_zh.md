@@ -3,9 +3,9 @@ HaloBot是基于LiAuto HaloOS打造的端到端具身智能机器人。HaloBot�
 
 ## 如何使用
 
-|第一步：下载|[源码下载流程](quick_start/01_downloading.md)|
-|第二步：编译|[工程编译流程](quick_start/02_compiling.md)|
-|第三步：运行|[部署运行流程](quick_start/03_running.md)|
+|第一步：下载|[源码下载流程](quick_start/docs/01_downloading.md)|
+|第二步：编译|[工程编译流程](quick_start/docs/02_compiling.md)|
+|第三步：运行|[部署运行流程](quick_start/docs/03_running.md)|
 
 
 ## 一、星环OS简介
