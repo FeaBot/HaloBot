@@ -3,8 +3,9 @@ HaloBot is an end to end embodied intelligent robot based on LiAuto HaloOS. It d
 
 ### How to use
 |Step 1: Download|[ource Code Download Process](docs/quick_start/01_downloading.md)|
-|Step 2: Compile|Project Compilation Process](docs/quick_start/02_compiling.md)|
+|Step 2: Compile|[Project Compilation Process](docs/quick_start/02_compiling.md)|
 |Step 3: Run|[Deployment and Running Process](docs/quick_start/03_running.md)|
+
 
 ### I. Introduction to HaloOS
 HaloOS is a vehicle operating system developed by Li Auto specifically for AI - intelligent business. With the core innovation concepts of global collaboration and the combination of hardware and software, it aims to set the industry benchmark for intelligent vehicle operating systems in terms of performance, security, cost, and efficiency, and lay a solid system foundation for the space robot era. It effectively addresses the challenges of hardware resource management and upper - layer application ecosystem support during the vehicle intelligence process, and serves as a crucial technical driving force for the development of intelligent vehicles.
