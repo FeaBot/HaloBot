@@ -1,0 +1,31 @@
+### 2. Technical Architecture of HaloOS  
+
+HaloOS is a vehicle-wide operating system designed for AI-intelligent business, with global collaboration and software-hardware integration as its core innovations. It sets industry benchmarks in performance, safety, cost, and efficiency, laying the foundation for the spatial robotics era.  
+
+- **Resource Centralization and Sharing**: Computing power pooling, Ethernet-based communication, global scheduling, service sharing  
+- **Extreme Performance**: End-to-end real-time performance, determinism, and reliability of critical links in hybrid systems  
+- **Rapid Iteration**: Software-hardware decoupling, software-software decoupling, service-oriented design, customized tools  
+- **High Security**: Systemic in-depth security protection with native security, safeguarding privacy data and vehicle control commands  
+
+HaloOS consists of four key components, which can be analogized to the human brain, cerebellum, nervous system, and immune system.  
+
+- **Intelligent Driving System**: Positioned as the vehicle's brain control system, it handles complex thinking processes to ensure intelligent driving operates efficiently and effectively. The design focuses on "wisdom":  
+  - Through optimization measures such as task scheduling and image processing, AI achieves "agile thinking," running faster and more stably.  
+  - Through virtualization technology, computing power sharing is realized, allowing a single chip to securely handle multiple tasks simultaneously, achieving "multi-tasking."  
+
+- **Intelligent Vehicle Control System**: Positioned as the vehicle's cerebellum control system, it is responsible for the vehicle's physical control, rapidly executing various basic control commands (e.g., turning lights on/off, adjusting air conditioning, controlling motors). The design focuses on "flexibility":  
+  - Through a flexible architecture, it adapts to chips from different brands and architectures, enabling free selection of MCU suppliers and shortening the time for new MCUs to be deployed in vehicles.  
+  - Key performance indicators and resource optimization metrics are leading in the industry, making it possible for multiple functions to share the same hardware and supporting flexible cost reduction.  
+  - The system is equipped with automatic configuration tools, PC-side hardware simulator tools, and a complete set of analysis tools covering resources, performance, and diagnostics, achieving a leap in R&D efficiency.  
+
+- **Communication Middleware**: Positioned as the vehicle's nervous system, it is responsible for transmitting information within and between domains, enabling efficient and reliable communication between various in-vehicle modules (e.g., brakes, screens, radars). The design focuses on "smoothness":  
+  - In terms of efficiency, it unifies the application-layer communication protocols of various in-vehicle devices, achieving "standardized communication across the vehicle," decoupling inter-domain communication, and improving efficiency.  
+  - In terms of reliability, it has achieved industry-leading key performance indicators and resource optimization, significantly enhancing communication reliability through technologies such as dual-channel backup.  
+
+- **Information Security System**: Positioned as the intelligent vehicle's immune system, it protects user privacy data and vehicle control commands. Through software-hardware collaboration, it builds a comprehensive system security framework to achieve four security objectives: system integrity protection, data encryption and protection, identity authentication and permission management, and trusted execution environment, realizing a native security in-depth defense system.  
+
+The four pillars of HaloOS are not independent modules but form a deeply integrated and collaborative organic whole—much like different systems in the human body coordinating to support advanced intelligent behavior. Using the communication middleware as a "high-speed nervous system," HaloOS ensures that complex decisions from the intelligent driving system can be efficiently and reliably transmitted to the vehicle control system for precise execution, while ensuring unobstructed data flow between sensors and processing units. Based on this integrated architecture, HaloOS can provide system-level guarantees beyond the capabilities of individual modules. For example, in terms of determinism, through global task scheduling, priority management, and deterministic communication mechanisms, HaloOS ensures predictable and stable low latency in the end-to-end task chain from sensor perception and intelligent driving "brain" decision-making to vehicle control "cerebellum" execution, maintaining stable and reliable performance even under complex working conditions with high multi-task concurrency, which is crucial for the safety and smoothness of intelligent driving.  
+
+Similarly, in terms of security, the information security "immune system" does not operate in isolation but runs through the entire operating system. A unified security architecture systematically applies measures such as identity authentication, permission management, integrity protection, and data encryption to all components, interfaces, and communication links. Combined with underlying support from trusted execution environments and hardware security modules (HSM), it achieves comprehensive, multi-layered in-depth defense from hardware trusted roots to upper-layer applications, from system startup to runtime, effectively resisting cross-module and cross-system attack penetrations.  
+
+It is this highly collaborative organic integrity that makes HaloOS more than just a collection of functions. It is a powerful platform capable of global optimization, unified management, and systematic security guarantees, providing core support for intelligent vehicles with high performance, high security, and high efficiency, and gradually building a solid system foundation for future spatial robots.

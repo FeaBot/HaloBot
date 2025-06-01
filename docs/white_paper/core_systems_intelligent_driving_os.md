@@ -1,0 +1,21 @@
+### 3.3 Intelligent Driving OS  
+
+#### 3.3.1 System Description  
+The Intelligent Driving OS is a specialized operating system designed for autonomous driving scenarios. It efficiently encapsulates underlying hardware capabilities such as image processing, AI inference acceleration, and video coding/decoding, maximizing hardware performance while providing a simple and easy-to-use interface for upper-layer applications. This enables upper-layer systems to focus on business logic and algorithm implementation, facilitating rapid product iteration. Additionally, the Intelligent Driving OS incorporates innovative designs in deterministic heterogeneous graph scheduling and hardware-software collaborative fault diagnosis/recovery mechanisms, ensuring excellent real-time performance, determinism, and security for autonomous driving. It also provides a complete set of toolchains for simulation, debugging, and observability, significantly enhancing developer efficiency during development, testing, and maintenance phases.  
+
+#### 3.3.2 Core Technical Features  
+
+##### 3.3.2.1 Low-Latency Image Preprocessing  
+Image preprocessing provides core input information for the autonomous driving edge system, directly influencing the overall performance of the autonomous driving system through image quality, latency, and stability. The image preprocessing subsystem of the Intelligent Driving OS dynamically pipelines image sensors to dedicated processing hardware (IP) based on user-configured multi-channel image groups, ensuring minimal end-to-end processing latency for optimal results.  
+
+##### 3.3.2.2 Vehicle-Optimized AI Inference  
+AI model inference is increasingly used in various automotive domains (e.g., vehicle control, autonomous driving), leading to a growing number of models with diverse requirements for resource usage, real-time performance, determinism, and security. The AI inference subsystem of the Intelligent Driving OS addresses these challenges through multi-level pre-orchestration of AI computing resources and a combination of built-in scheduling modes (e.g., sub-model scheduling, priority scheduling, spatial-temporal resource scheduling), enabling flexible strategy selection for different scenarios to meet edge AI inference needs effectively.  
+
+##### 3.3.2.3 End-to-End Deterministic Scheduling  
+As a key foundation for autonomous driving systems, the Intelligent Driving OS aims to achieve two core objectives: extreme performance and strict determinism in critical link execution. The latter requires not only extremely low latency jitter but also predictable and replayable execution processes to ensure driving safety. To achieve this, the OS constructs heterogeneous computing task graphs covering the entire process from sensor input to controller output, precisely mapping tasks to underlying hardware units, managing resource contention, and ensuring predictable end-to-end scheduling.  
+
+##### 3.3.2.4 Customized Autonomous Driving Linux Kernel  
+Customized Linux kernels play a critical role in autonomous driving due to the stringent requirements for real-time performance, reliability, security, and hardware support. Standard Linux kernels are often insufficient, necessitating deep customization and functional enhancements. Key technical solutions for the customized autonomous driving Linux kernel include:  
+- **Real-Time Performance Enhancement**: Uses a hybrid preemption model to improve scheduling real-time performance in autonomous driving scenarios and supports programmable scheduling algorithm extensions to optimize performance across diverse vehicle applications.  
+- **Resource Utilization and Management**: Employs an intelligent memory tiering unload mechanism to reduce memory usage transparently, combined with dynamic large pages and optimized page reclaim algorithms to enhance memory management efficiency.  
+- **High-Reliability Health Management**: Implements a real-time health diagnostic framework to provide functional safety (FHTI) guarantees, including precise hardware/software fault localization, fault severity assessment, and multi-level fault handling mechanisms to ensure system availability.
