@@ -1,4 +1,3 @@
-.md)
 # LiAuto HaloOS Technical Architecture White Paper
 
 1. [Overview](overview.md)  
