@@ -12,7 +12,7 @@ Step 3: Run([How to deploy and run](docs/quick_start/03_running.md))
 
 ### I. Introduction to HaloOS
 HaloOS is a vehicle operating system developed by Li Auto specifically for AI - intelligent business. With the core innovation concepts of global collaboration and the combination of hardware and software, it aims to set the industry benchmark for intelligent vehicle operating systems in terms of performance, security, cost, and efficiency, and lay a solid system foundation for the space robot era. It effectively addresses the challenges of hardware resource management and upper - layer application ecosystem support during the vehicle intelligence process, and serves as a crucial technical driving force for the development of intelligent vehicles.
-[For more information about HaloOS, you can refer to *Technical Architecture White Paper of Li Auto HaloOS v1.0*](docs/LiAuto_HaloOS_Technical_Architecture_White_Paper_v1.0.pdf)
+[For more information about HaloOS, you can refer to *Technical Architecture White Paper of Li Auto HaloOS v1.0*](docs/white_paper/index.md)
 
 ### II. Technical Architecture of HaloOS
 HaloOS is composed of an intelligent driving system, an intelligent vehicle control system, a communication middleware, and an information security system. These components work in close coordination to form an organic whole.
