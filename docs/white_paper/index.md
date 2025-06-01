@@ -1,5 +1,5 @@
 
-# LiAuto HaloOS Technical Architecture White Paper  
+# Technical Architecture White Paper of LiAuto HaloOS
 
 ## Table of Contents  
 
