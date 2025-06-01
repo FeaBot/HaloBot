@@ -90,8 +90,10 @@ python ./vcos/build/compiling_env.py
 ==============================
 处理: CMake
 ==============================
-
-[ERR] URL 错误: [WinError 10054] 远程主机强迫关闭了一个现有的连接。
+开始下载: cmake-4.0.0-windows-x86_64.msi
+下载进度: 100.0% (34242560/34242560 bytes)
+[OK] 下载完成: G:\Work\__HaloOS\haloosspace_new\.temp\cmake-4.0.0-windows-x86_64.msi
+[ERR] 安装失败:
 1. 在CMake 4.0.0 官网安装包(https://github.com/Kitware/CMake/releases/download/v4.0.0/cmake-4.0.0-windows-x86_64.msi) 下载对应Windows版本的CMake工具
 2. 双击安装，安装的时候请注意勾选'Add to Path'，以添加到环境变量中
 3. 用管理员权限重启powershell，执行`cmake --version`，输出版本号即表示安装成功
